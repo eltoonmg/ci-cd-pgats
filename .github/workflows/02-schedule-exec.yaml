@@ -7,11 +7,11 @@ name: "Execução Agendada"
 # gatilho manual = workflow_dispatch
 
 on:
-    Schedule:
+    schedule:
     # cronograma de execução
     # 1 - minutos, 2 - Hora, 3 - dia do mês, 4 - mês, 5 - dia da semana
     # Roda toda sexta 1h da manhã
-    - cron: '30 0 * * 5'
+      - cron: '30 3 * * 5'
 
 #tarefas dentro da pipeline = jobs
 
